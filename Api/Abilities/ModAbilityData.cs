@@ -6,11 +6,15 @@ using UnityEngine;
 
 namespace Abyss.Api.Abilities;
 
+/// <summary>
+/// The base class for all custom abilities
+/// </summary>
+/// <typeparam name="T"></typeparam>
 [PublicAPI]
 public abstract class ModAbilityData<T> : ScriptableObjectModContent<AbilityData> where T : ModAbility
 {
     /// <summary>
-    /// The instance of your <typeparam name="T"></typeparam>
+    /// The instance of your ModAbility
     /// </summary>
     public T Ability { get; set; } = null!;
 
@@ -24,6 +28,9 @@ public abstract class ModAbilityData<T> : ScriptableObjectModContent<AbilityData
     /// </summary>
     public virtual Sprite? IconImage => GetSprite(Icon);
 
+    /// <summary>
+    /// Should this ability be unlocked by default
+    /// </summary>
     public virtual bool AutoUnlock => true;
 
     /// <summary>
