@@ -21,16 +21,15 @@
         <Version>0.0.1</Version>
 
         <Authors>GrahamKracker</Authors>
+        <DontUseDredgeLibs>true</DontUseDredgeLibs>
     </PropertyGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\Abyss.Core\Abyss.Core.csproj" Private="false"/>
     </ItemGroup>
 
-
-
     <ItemGroup>
-      <Content Include=".github\workflows\build.yml" />
+        <None Include=".github\workflows\build.yml" />
     </ItemGroup>
 
     <Import Condition="Exists('..\..\dredge.targets')" Project="..\..\dredge.targets"/>
