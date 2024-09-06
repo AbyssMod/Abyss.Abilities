@@ -21,7 +21,6 @@
         <Version>0.0.1</Version>
 
         <Authors>GrahamKracker</Authors>
-        <DontUseDredgeLibs>true</DontUseDredgeLibs>
     </PropertyGroup>
 
     <ItemGroup>

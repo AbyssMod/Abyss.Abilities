@@ -96,7 +96,6 @@ public abstract class ModAbilityData<T> : ScriptableObjectModContent<AbilityData
         Item.sfxRepeatThreshold = sfxRepeatThreshold;
 
 
-
         Edit(Item);
 
         ApplicationEvents.Instance.OnGameLoaded += () =>
